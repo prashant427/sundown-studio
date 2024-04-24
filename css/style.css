@@ -1,0 +1,682 @@
+/* font-family: neue haas grotesk display pro; */
+@import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
+
+@font-face {
+    font-family: neue haas grotesk display pro;
+    src: url(./NeueHaasDisplayBlack.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100%;
+    position: relative;
+    background-color: rgb(224, 255, 255);
+}
+#main{
+   
+   /* color: #fff; */
+   position: relative;
+   z-index: 10;
+   overflow: hidden;
+   
+   
+}
+
+#slider_menu{
+    width: 100%;
+    height: 100%;
+    background-color: #00000065;
+    position: absolute;
+    z-index: 99;
+    top: -100%;
+}
+
+
+#hero{
+    width: 100%;
+    min-height: 100%;
+    padding:  2vw;
+    position: relative;
+    background-color: rgb(224, 255, 255);
+}
+
+
+#navbar-contaner {
+    width: 100%;
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#brand>img {
+    filter: hue-rotate(180deg) saturate(500%);
+    -webkit-filter: hue-rotate(180deg) saturate(500%);
+    -moz-filter: hue-rotate(180deg) saturate(500%);
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#menu{
+ display: none;       
+}
+#navbar h4{
+    position: relative;
+    /* font-size: 1.2rem; */
+    font-weight: 500;
+    padding: 10px 20px;
+    border: 1px solid #0808085e;
+    border-radius: 50px;
+    font-family: sans-serif;
+    overflow: hidden;
+    font-family: neue haas grotesk display pro;
+} 
+#navbar h4::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: -100%;
+    
+    border-radius: 50%;
+    background-color: #00e5ffd4;
+    transition: all ease .6s;
+}
+
+#navbar h4:hover::after{
+    bottom: 0;
+    border-radius: initial;
+}
+
+#navbar h4 a{
+    text-decoration: none;
+    color: black;
+    z-index: 9;
+    position: relative;
+}
+#hero-center{
+    width: 100%;
+    height: 65%;
+    /* background-color: orange; */
+    display: flex;
+    /* align-items: end; */
+    
+    gap: 10vw;
+    justify-content: space-between;
+    border-bottom: 2px solid #0000003c;
+    padding: 10vw 2vw;
+   
+}
+
+
+#hero-center > #lft >h4{
+    /* width: 37vw; */
+   
+    font-size: 4vw;
+    font-family: neue haas grotesk display pro;
+    
+}
+#hero-center > #rit{
+   /* width: 50%; */
+    font-size: 5vw;
+    line-height: 8vw;
+    text-align: right;
+    font-family: neue haas grotesk display pro;
+
+}
+
+#hero > video{
+    margin-top: 4vw;
+    width: 100%;
+    position: relative;
+    border-radius: 30px;
+    display: block;
+    /* z-index: 5; */
+}
+#hero-shap{
+    width: 45vw;
+    height: 45vh;
+    position: absolute;
+    right: 0;
+    top: 35%;
+    
+    /* z-index: 1; */
+}
+#shap1{
+    width: 100%;
+    height: 100%;
+    filter: blur(20px);
+    background-color: #00e5ffd4;
+    position: absolute;
+    
+    border-top-left-radius: 50%;
+    border-bottom-left-radius:50% ;
+}
+#shap2{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(20px);
+    /* background-color: #00e5ffd4; */
+    background: linear-gradient(#00e5ffd4,#b1f0f6d4);
+    animation-name: anime2;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+#shap3{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* z-index: 3; */
+    filter: blur(20px);
+    mix-blend-mode: normal;
+    border-radius: 999em;
+    
+    
+    background: linear-gradient(#00e5ffd4,#b1f0f6d4);
+    animation-name: anime1;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes anime1 {
+    from{
+    
+        transform: translate(50%);
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+    to{
+       /* transform: translate(10%, -10%); */
+        
+    }
+}
+
+@keyframes anime2 {
+    from{
+        transform: rotate(45deg);    
+    
+}
+    to{
+       transform: translate(-45deg);
+        
+    }
+}
+
+#markiting{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(224, 255, 255);
+    position: relative;
+}
+
+.marquee{
+    /* background-color: lightblue; */
+    white-space: nowrap;
+    padding: 8vw 0;
+    overflow-x: auto;
+}
+.marquee::-webkit-scrollbar{
+    display: none;
+}
+
+.marquee h1{
+    font-size: 9vw;
+    font-family: neue haas grotesk display pro;
+    
+    
+}
+.gola{
+    width: 6vw;
+    height: 6vw;
+    /* border-radius: 999em; */
+    margin: 0vw 1vw;
+    background-color: #00e5ffd4;
+    animation-name: rotate-gola;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.marquee-wrap{
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: marquee;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.marquee-wrap > * {
+ display: inline-block;
+ padding: 10px;
+
+}
+
+
+@keyframes marquee {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+
+    
+}
+@keyframes rotate-gola {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+#showcase{
+    width: 100%;
+    /* height: 80vh; */
+    padding: 3vw 4.5vw;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 12vw;
+    /* justify-content: space-between; */
+    /* background-color: aliceblue; */
+    font-family: neue haas grotesk display pro;
+}
+#showcase > h1 {
+    font-size: 4vw;
+    line-height: 4vw;
+    width: 50%;
+}
+#market-box{
+    width: 80%;
+    gap: 15px;
+}
+#market-box img{
+    width: 50%;
+    border-radius: 20px;
+} 
+#market-box p{
+    margin-top: 2vw;
+}
+#fluf-ball{
+    width: 30vw;
+    height: 30vw;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(#00e5ffd4,#b1f0f6d4);
+    top: 65%;
+    left: 20%;
+    filter: blur(20px);
+    animation-name: fluf-eff;
+    animation-duration: .80s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fluf-eff {
+    from{
+        transform: translate(30px );
+        transform: skew(40px );
+    
+        
+    }
+    to{
+        transform: translateY(-30px );
+        transform: skew(-40px );
+        
+    }
+}
+#project{
+    width: 100%;
+    /* min-height: 100vh; */
+    padding: 2vw;
+    background-color: rgb(224, 255, 255);
+}
+
+/* project  */
+#tag{
+    padding: 3vw;
+    display: flex;
+    align-items: center;
+    font-family: neue haas grotesk display pro;
+    
+}
+
+#tag > .gola{
+      
+       width: 10px;
+       height: 10px;
+       /* border-radius: 50%; */
+       animation-name: none;
+}
+#project-con{
+    width: 100%;
+    /* min-height: 80vh; */
+    
+    /* background-color: lawngreen; */
+}
+.elem{
+    width: 100%;
+    height: 10%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    border-bottom: 1px solid #0000003c;
+    padding: 2vw;
+    font-family: neue haas grotesk display pro;
+    overflow: hidden;
+    
+    
+} 
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%  ;
+    background-color: #00e5ff75;
+    /* z-index: 5; */
+    border-radius: 50%;
+    transition: all ease .3s;
+}
+.elem:hover .overlay{
+    top: 0;
+    border-radius: 0;
+}
+.elem >  h1{
+    text-transform: capitalize;
+    position: relative;
+    font-size: 5vw;
+}
+.brand {
+    text-transform: uppercase;
+    text-align: right;
+
+}
+.brand h4{
+    font-size: 14px;
+    font-weight: 700;
+}.brand p{
+    font-size: 12px;
+    
+    font-weight: 500;
+}
+#project-card{
+    width: 25vw;
+    height: 30vw;
+    left: 50%;
+    top: 30%;
+    display: none;
+    border-radius: 25px;
+    /* background-color: navajowhite; */
+    position: fixed;
+    z-index: 99;
+    background-size: cover;
+    background-position: center;
+    
+}
+.btn{
+    width: fit-content;
+    font-size: 1rem;
+    text-transform: capitalize;
+    position: relative;
+    /* font-size: 1.2rem; */
+    font-weight: 500;
+    margin: 2vw ;
+    padding: 10px 20px;
+    border: 1px solid #0808085e;
+    border-radius: 50px;
+    font-family: sans-serif;
+    overflow: hidden;
+    font-family: neue haas grotesk display pro;
+}
+.btn::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: -100%;
+    
+    border-radius: 50%;
+    background-color: #00e5ffd4;
+    transition: all ease .6s;
+}
+.btn:hover::after{
+    bottom: 0;
+    border-radius: initial;
+}
+.btn:hover span {
+    position: relative;
+    z-index: 5;
+}
+
+#showcase{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(224, 255, 255);
+}
+
+
+#show_card{
+    width: 100%;
+    height: 80vh;
+    background-color: #212121;
+    color: #fff;
+    display: flex;
+    border-radius: 25px;
+    overflow: hidden;
+}
+#show_card > #lft{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    /* background-color: firebrick; */
+}
+#show_card > #lft > #uper {
+    width: 100%;
+    /* height: 50%; */
+    /* background-color: saddlebrown; */
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding-left: 15%;
+    justify-content: center;
+}
+#show_card > #lft > #uper h2 { 
+    
+    text-align: left;
+    font-size: 4vw;
+    /* padding: 5%; */
+    color: #efeae388;
+    font-family: neue haas grotesk display pro;
+}
+#show_card > #lft > #uper h2::before {
+    content: "";
+    
+    padding: 5px;
+    border-left: 2px solid #efeae388;
+}
+#show_card > #lft > #uper h2:hover{
+
+    color: #fff;
+} 
+#show_card > #lft > #uper h2:hover::before {
+    
+    border-left: 2px solid #00e5ffd4 ;
+}
+
+#show_card > #lft > p {
+    /* width: 100%; */
+    /* height: 50%; */
+    padding: 0 5.5vw;
+    font-size: 1.5vw;
+    /* background-color: sandybrown; */
+
+}
+#show_card > #rit{
+    width: 55%;
+    height: 100%;
+    /* background-color: fuchsia; */
+    background-image: url(../img/socase_img.webp);
+    background-size: cover;
+    background-position: center;
+}
+#slider{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(224, 255, 255);
+    padding:  2vw;
+}
+#swiper_wrap{
+    /* height: 40vh; */
+    width: 100%;
+    padding: 6vw 2vw;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding: 1vw;
+
+  }
+
+  .swiper-slide {
+    
+    min-width: 200px;
+      width: 30%;
+      height: 100%;
+      border-left: 1px solid #212121;
+      font-family: neue haas grotesk display pro;
+      padding: 1vw 2vw;
+      
+    }
+    .swiper-slide img{
+        width: 10em;
+
+    }
+    .swiper-slide p{
+        padding: 1vw;
+    }
+    
+#nobg{
+    width: 100%;
+    height: 60vw;
+
+}
+#slidfoot{
+    
+    height: 100vh;
+    width: 100%;
+    /* background-color: #212121;  */
+    position: fixed;
+    /* color: #fff; */
+    z-index: 9;
+    bottom: 0;
+    font-family: neue haas grotesk display pro;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+#slidfoot > h1{
+    font-size: 23vw;    
+    background-color: #fff;
+}
+
+
+
+#slidfoot #footer{
+    width: 100%;
+    height: 7vw;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    font-family: neue haas grotesk display pro;
+    font-size: 1.5vw;
+}
+
+#footer > h4{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+#footer_nav{
+    width: 100%;
+    /* height: 30%; */
+    background-color: rgb(224, 255, 255);
+    
+    display: flex;
+    align-items: center;
+    padding: 2vw 8vw;
+    justify-content: space-between;
+    
+}
+#foot_nav_lft{
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-family: neue haas grotesk display pro;
+}
+
+#foot_nav_rit{
+    width: 35%;
+    display: flex;
+flex-direction: column;
+gap: 20px;
+/* font-size: 4vw; */
+
+}
+#foot_nav_rit > input{
+    width: 100%;
+    height: 40px;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #212121;
+    
+}
+
+
+#flufycloud{
+    width: 100%;
+    height: 40%;
+    position: absolute; 
+    top: 0;
+    background-color: #000;
+}
+
+
